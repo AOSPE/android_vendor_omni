@@ -70,3 +70,7 @@ endif
 
 # Add our overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/omni/overlay/common
+
+# Turn art optimization to everything
+dalvik.vm.image-dex2oat-filter=everything \
+dalvik.vm.dex2oat-filter=everything
